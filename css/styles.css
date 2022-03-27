@@ -1,0 +1,169 @@
+/**
+*
+* Comentario: ## Colors
+*
+**/
+:root {
+  /* ### Primary */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* ### Neutral */
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--VeryLightGray);
+  min-height: 97vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-weight: 400;
+  margin-top: 3rem;
+  color: var(--VeryDarkBlue);
+}
+
+.title-negrita {
+  display: block;
+  font-weight: 600;
+  /* color: #000; */
+}
+
+.parrafo {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-weight: 200;
+  width: 550px;
+  font-size: 15px;
+  color: var(--VeryDarkBlue);
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: 80%;
+  height: 800px;
+}
+
+.card {
+  position: absolute;
+  width: 350px;
+  height: 230px;
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 5px 5px 20px #ccc;
+  background-color: white;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 16px;
+  color: var(--VeryDarkBlue);
+}
+
+.card__parrafo {
+  font-size: 15px;
+  color: var(--GrayishBlue);
+}
+
+.card-left {
+  border-top: 3px solid var(--Cyan);
+  top: 35%;
+}
+
+.card-top {
+  border-top: 3px solid var(--Red);
+  left: 34%;
+}
+
+.card-bottom {
+  border-top: 3px solid var(--Orange);
+  bottom: 0;
+  left: 34%;
+}
+
+.card-right {
+  border-top: 3px solid var(--Blue);
+  right: 0;
+  top: 35%;
+}
+
+.icon {
+  width: 45px;
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+.attribution {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.link {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 18px;
+    width: auto;
+  }
+
+  .parrafo {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    position: relative;
+    margin: 1rem 0;
+    width: 90%;
+  }
+
+  .card-left {
+    border-top: 3px solid var(--Cyan);
+    top: auto;
+  }
+
+  .card-top {
+    border-top: 3px solid var(--Red);
+    left: auto;
+  }
+
+  .card-bottom {
+    border-top: 3px solid var(--Orange);
+    bottom: auto;
+    left: auto;
+  }
+
+  .card-right {
+    border-top: 3px solid var(--Blue);
+    right: auto;
+    top: auto;
+  }
+}
