@@ -30,7 +30,7 @@ body {
   align-items: center;
 }
 
-.title {
+.h1 {
   font-weight: 400;
   margin-top: 3rem;
   color: var(--VeryDarkBlue);
